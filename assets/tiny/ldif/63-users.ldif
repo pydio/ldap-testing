@@ -1,0 +1,206 @@
+# New entry 
+dn: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 1
+uid: rlefeuvre1
+homeDirectory: /home/rlefeuvre1
+sn: Judicaël
+cn: Judicaël
+mail: rlefeuvre1@example.com
+employeeType: staff
+displayName: Name Judicaël
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 2
+uid: jtremollet2
+homeDirectory: /home/jtremollet2
+sn: Marie-françoise
+cn: Marie-françoise
+mail: jtremollet2@example.com
+employeeType: staff
+displayName: Name Marie-françoise
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=atimby3,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 3
+uid: atimby3
+homeDirectory: /home/atimby3
+sn: Torbjörn
+cn: Torbjörn
+mail: atimby3@example.com
+employeeType: staff
+displayName: Name Torbjörn
+userPassword:: UEBzc3cwcmQ=
+
+
+# New entry 
+dn: uid=lboytond,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 4
+uid: lboytond
+homeDirectory: /home/lboytond
+sn: Pål
+cn: Pål
+mail: lboytond@example.com
+employeeType: staff
+displayName: Name Pål
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=mstreather2r,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 5
+uid: mstreather2r
+homeDirectory: /home/mstreather2r
+sn: Léonie
+cn: Léonie
+mail: mstreather2r@example.com
+employeeType: visitor
+displayName: Name Léonie
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=lroskruge68,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 6
+uid: lroskruge68
+homeDirectory: /home/lroskruge68
+sn: Maïwenn
+cn: Maïwenn
+mail: lroskruge68@example.com
+employeeType: controller
+displayName: Name Maïwenn
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 7
+uid: yconeleyb2
+homeDirectory: /home/yconeleyb2
+sn: Maï
+cn: Maï
+mail: yconeleyb2@example.com
+employeeType: staff
+displayName: Name Maï
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=ablondelleme,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 8
+uid: ablondelleme
+homeDirectory: /home/ablondelleme
+sn: Mélinda
+cn: Mélinda
+mail: ablondelleme@example.com
+employeeType: partner
+displayName: Name Mélinda
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=sriste8f,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 9
+uid: sriste8f
+homeDirectory: /home/sriste8f
+sn: Gisèle
+cn: Gisèle
+mail: sriste8f@example.com
+employeeType: staff
+displayName: Name Gisèle
+userPassword:: UEBzc3cwcmQ=
+
+# New entry 
+dn: uid=ppringuerlx,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 10
+uid: ppringuerlx
+homeDirectory: /home/ppringuerlx
+sn: Eléa
+cn: Eléa
+mail: ppringuerlx@example.com
+employeeType: visitor
+displayName: Name Eléa
+userPassword:: UEBzc3cwcmQ=
+
+#dn: cn=employee,ou=staff,ou=groups,dc=example,dc=com
+#changetype: add
+#objectClass: groupOfNames
+#objectClass: top
+#cn: employee
+#member: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
+#member: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
+#member: uid=atimby3,ou=staff,ou=people,dc=example,dc=com
+#member: uid=lboytond,ou=staff,ou=people,dc=example,dc=com
+#member: uid=lroskruge68,ou=staff,ou=people,dc=example,dc=com
+#member: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
+#member: uid=ablondelleme,ou=staff,ou=people,dc=example,dc=com
+#member: uid=sriste8f,ou=staff,ou=people,dc=example,dc=com
+#description: All employees of the Example organisation
+#
