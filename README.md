@@ -8,6 +8,12 @@ This repository provides an easy way to generate various simple _dummy_ docker i
 
 The generated images are then uploaded to [the Docker hub](https://hub.docker.com/r/pydio/ldap-testing/).
 
+To launch the image simply run:
+
+```sh
+docker run --rm -p "389:389" pydio/ldap-testing:tiny --loglevel debug
+```
+
 ## How To Use
 
 ### Pre-requisite
@@ -54,7 +60,7 @@ To do so, you might impact following files:
 - the `Makefile` to define main variables
 - the `dummy-users.csv` (that can be found under `assets/tiny` or `assets/medium` to change the user that are used.
 
-PLease make extra care not to modify the main `pydio/ldap-testing` blindly: we rely on some of the well known values for our integration tests.
+Please make extra care not to modify the main `pydio/ldap-testing` blindly: we rely on some of the well known values for our integration tests.
 
 ## Built upon
 

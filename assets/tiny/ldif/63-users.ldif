@@ -1,4 +1,4 @@
-# Dummy users for dc=example,dc=com generated at 2019-06-18, 14:31  
+# Dummy users for dc=example,dc=com generated at 2019-06-18, 15:36  
 
 dn: uid=billy,ou=staff,ou=people,dc=example,dc=com
 changetype: add

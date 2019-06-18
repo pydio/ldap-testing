@@ -4,17 +4,29 @@ objectClass: organizationalUnit
 objectClass: top
 ou: people
 
-dn: ou=visitor,ou=people,dc=example,dc=com
+dn: ou=partner,ou=people,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
-ou: visitor
+ou: partner
+
+dn: ou=controller,ou=people,dc=example,dc=com
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: controller
 
 dn: ou=staff,ou=people,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
 ou: staff
+
+dn: ou=visitor,ou=people,dc=example,dc=com
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: visitor
 
 dn: ou=dev,ou=staff,ou=people,dc=example,dc=com
 changetype: add

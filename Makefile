@@ -10,7 +10,7 @@ BASE_DN="dc=example,dc=com"
 
 
 # simply insures targets are never cached: "a phony target is simply a target that is always out-of-date"...
-.PHONY: debug clean pre-build build build-nocache publish set-tiny-tag tiny
+.PHONY: debug clean pre-build build build-nocache publish tiny medium
 
 debug:
 	@echo 'Tag: $(TAG)'
