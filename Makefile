@@ -5,6 +5,8 @@ NAME=$(OWNER)/$(IMG_NAME)
 CURR_DIR=$(shell pwd)
 # we build a tiny image by default
 TAG ?= tiny
+# this is the base DN for the generated user and group repository
+BASE_DN="dc=example,dc=com"
 
 
 # simply insures targets are never cached: "a phony target is simply a target that is always out-of-date"...
@@ -18,7 +20,7 @@ clean:
 
 pre-build: clean
 	@rm -f ./assets/$(TAG)/ldif/63-users.ldif
-	@php ./scripts/generate-users-ldif.php $(CURR_DIR)/assets/$(TAG)/dummy-users.csv >> ./assets/$(TAG)/ldif/63-users.ldif
+	@php ./scripts/generate-users-ldif.php $(CURR_DIR)/assets/$(TAG)/dummy-users.csv $(BASE_DN) >> ./assets/$(TAG)/ldif/63-users.ldif
 	@cp -R ./assets/$(TAG)/ldif ./bootstrap/ldif 
 
 build: pre-build

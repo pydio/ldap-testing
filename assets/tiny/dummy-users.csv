@@ -1,10 +1,12 @@
-1,rlefeuvre1@example.com,rlefeuvre1,Lefeuvre,Judicaël,staff,Management
-2,jtremollet2@example.com,jtremollet2,Tremollet,Marie-françoise,staff,Management
-3,atimby3@example.com,atimby3,Atimby,Torbjörn,staff,
-4,lboytond@example.com,lboytond,Boytond,Pål,staff,
-5,mstreather2r@example.com,mstreather2r,Streather,Léonie,visitor,
-6,lroskruge68@example.com,lroskruge68,Roskrug,Maïwenn,controller,
-7,yconeleyb2@example.com,yconeleyb2,Coneley,Maï,staff,IT
-8,ablondelleme@example.com,ablondelleme,Ablondelle,Mélinda,partner,
-9,sriste8f@example.com,sriste8f,Riste,Gisèle,staff,Finance
-10,ppringuerlx@example.com,ppringuerlx,Pringue,Eléa,visitor,
+0,Email Address,Login,Last name,First name,Position,Groups,Comments
+1,billy@example.com,billy,Doo,William,staff,Test,DO NOT modify or delete this user that is used for various basic checks.
+2,rlefeuvre1@example.com,rlefeuvre1,Lefeuvre,Judicaël,staff,Management,
+3,jtremollet2@example.com,jtremollet2,Tremollet,Marie-françoise,staff,Management,
+4,atimby3@example.com,atimby3,Atimby,Torbjörn,staff,,
+5,lboytond@example.com,lboytond,Boytond,Pål,staff,,
+6,mstreather2r@example.com,mstreather2r,Streather,Léonie,visitor,,
+7,lroskruge68@example.com,lroskruge68,Roskrug,Maïwenn,controller,,
+8,yconeleyb2@example.com,yconeleyb2,Coneley,Maï,staff,IT,
+9,ablondelleme@example.com,ablondelleme,Ablondelle,Mélinda,partner,,
+10,sriste8f@example.com,sriste8f,Riste,Gisèle,staff,Finance,
+11,ppringuerlx@example.com,ppringuerlx,Pringue,Eléa,visitor,,

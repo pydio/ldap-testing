@@ -1,4 +1,22 @@
-# Dummy users generated at 2019-06-18, 12:38  
+# Dummy users for dc=example,dc=com generated at 2019-06-18, 14:31  
+
+dn: uid=billy,ou=staff,ou=people,dc=example,dc=com
+changetype: add
+gidNumber: 0
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+objectClass: posixAccount
+uidNumber: 1
+uid: billy
+homeDirectory: /home/billy
+sn: Doo
+cn: William Doo
+mail: billy@example.com
+employeeType: staff
+displayName: William Doo
+userPassword:: UEBzc3cwcmQ=
 
 dn: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
 changetype: add
@@ -8,7 +26,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 1
+uidNumber: 2
 uid: rlefeuvre1
 homeDirectory: /home/rlefeuvre1
 sn: Lefeuvre
@@ -26,7 +44,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 2
+uidNumber: 3
 uid: jtremollet2
 homeDirectory: /home/jtremollet2
 sn: Tremollet
@@ -44,7 +62,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 3
+uidNumber: 4
 uid: atimby3
 homeDirectory: /home/atimby3
 sn: Atimby
@@ -62,7 +80,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 4
+uidNumber: 5
 uid: lboytond
 homeDirectory: /home/lboytond
 sn: Boytond
@@ -80,7 +98,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 5
+uidNumber: 6
 uid: mstreather2r
 homeDirectory: /home/mstreather2r
 sn: Streather
@@ -98,7 +116,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 6
+uidNumber: 7
 uid: lroskruge68
 homeDirectory: /home/lroskruge68
 sn: Roskrug
@@ -116,7 +134,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 7
+uidNumber: 8
 uid: yconeleyb2
 homeDirectory: /home/yconeleyb2
 sn: Coneley
@@ -134,7 +152,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 8
+uidNumber: 9
 uid: ablondelleme
 homeDirectory: /home/ablondelleme
 sn: Ablondelle
@@ -152,7 +170,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 9
+uidNumber: 10
 uid: sriste8f
 homeDirectory: /home/sriste8f
 sn: Riste
@@ -170,7 +188,7 @@ objectClass: organizationalPerson
 objectClass: person
 objectClass: top
 objectClass: posixAccount
-uidNumber: 10
+uidNumber: 11
 uid: ppringuerlx
 homeDirectory: /home/ppringuerlx
 sn: Pringue
@@ -185,6 +203,7 @@ changetype: add
 objectClass: groupOfNames
 objectClass: top
 cn: employees
+member: uid=billy,ou=staff,ou=people,dc=example,dc=com
 member: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
 member: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
 member: uid=atimby3,ou=staff,ou=people,dc=example,dc=com

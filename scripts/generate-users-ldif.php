@@ -1,21 +1,21 @@
 <?php
 
-// We expect full path
-$source_file_path = $argv[1];
+$source_file_path = $argv[1]; // We expect full path
+$baseDN = $argv[2]; // The base DN that wil be used
 
-$baseDN = "dc=example,dc=com";
-
+$firstRow = 2; // We skip CSV file headers
 $row = 1;
 date_default_timezone_set('Europe/Paris');
 $currDate= date("Y-m-d, H:i ");
 $limit = 12000;
 
-
 if (($handle = fopen($source_file_path, "r")) !== FALSE) {
-    echo "# Dummy users generated at ".$currDate." \n\n";
+    echo "# Dummy users for ".$baseDN." generated at ".$currDate." \n\n";
 
     $members = "";
     while ((($data = fgetcsv($handle, 0, ",")) !== FALSE) && ($row <= $limit)){
+        if($row < $firstRow) { $row++; continue; }
+   
         $num = count($data);
         echo "dn: uid=".$data[2].",ou=".$data[5].",ou=people,".$baseDN."\n";
         echo "changetype: add\n";
@@ -25,7 +25,7 @@ if (($handle = fopen($source_file_path, "r")) !== FALSE) {
         echo "objectClass: person\n";
         echo "objectClass: top\n";
         echo "objectClass: posixAccount\n";
-        echo "uidNumber: $row\n";
+        echo "uidNumber: ".$data[0]."\n";
         echo "uid: ".$data[2]."\n";
         echo "homeDirectory: /home/".$data[2]."\n";
         echo "sn: ".$data[3]."\n";
