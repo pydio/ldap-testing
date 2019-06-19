@@ -1,12 +1,12 @@
 0,Email Address,Login,Last name,First name,Position,Groups,Comments
-1,billy@example.com,billy,Doo,William,staff,Test,DO NOT modify or delete this user that is used for various basic checks.
-2,rlefeuvre1@example.com,rlefeuvre1,Lefeuvre,Judicaël,staff,Management,
-3,jtremollet2@example.com,jtremollet2,Tremollet,Marie-françoise,staff,Management,
-4,atimby3@example.com,atimby3,Atimby,Torbjörn,staff,,
-5,lboytond@example.com,lboytond,Boytond,Pål,staff,,
-6,mstreather2r@example.com,mstreather2r,Streather,Léonie,visitor,,
-7,lroskruge68@example.com,lroskruge68,Roskrug,Maïwenn,controller,,
-8,yconeleyb2@example.com,yconeleyb2,Coneley,Maï,staff,IT,
-9,ablondelleme@example.com,ablondelleme,Ablondelle,Mélinda,partner,,
-10,sriste8f@example.com,sriste8f,Riste,Gisèle,staff,Finance,
-11,ppringuerlx@example.com,ppringuerlx,Pringue,Eléa,visitor,,
+1,billy@example.com,billy,Doo,William,staff,,DO NOT modify or delete this user that is used for various basic checks.
+2,rlefeuvre1@example.com,rlefeuvre1,Lefeuvre,Judicaël,staff,"cn=manager,ou=internal,ou=groups,dc=example,dc=com|cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+3,jtremollet2@example.com,jtremollet2,Tremollet,Marie-françoise,staff,"cn=manager,ou=internal,ou=groups,dc=example,dc=com|cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+4,atimby3@example.com,atimby3,Atimby,Torbjörn,staff,"cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+5,lboytond@example.com,lboytond,Boytond,Pål,staff,"cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+6,mstreather2r@example.com,mstreather2r,Streather,Léonie,visitor,"cn=visitor,ou=external,ou=groups,dc=example,dc=com",
+7,lroskruge68@example.com,lroskruge68,Roskrug,Maïwenn,partner,"cn=partner,ou=internal,ou=groups,dc=example,dc=com",
+8,yconeleyb2@example.com,yconeleyb2,Coneley,Maï,staff,"cn=manager,ou=internal,ou=groups,dc=example,dc=com|cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+9,ablondelleme@example.com,ablondelleme,Ablondelle,Mélinda,partner,"cn=partner,ou=internal,ou=groups,dc=example,dc=com",
+10,sriste8f@example.com,sriste8f,Riste,Gisèle,staff,"cn=staff,ou=internal,ou=groups,dc=example,dc=com",
+11,ppringuerlx@example.com,ppringuerlx,Pringue,Eléa,visitor,"cn=visitor,ou=external,ou=groups,dc=example,dc=com",

@@ -10,12 +10,6 @@ objectClass: organizationalUnit
 objectClass: top
 ou: partner
 
-dn: ou=controller,ou=people,dc=example,dc=com
-changetype: add
-objectClass: organizationalUnit
-objectClass: top
-ou: controller
-
 dn: ou=staff,ou=people,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
@@ -28,19 +22,31 @@ objectClass: organizationalUnit
 objectClass: top
 ou: visitor
 
-dn: ou=dev,ou=staff,ou=people,dc=example,dc=com
+dn: ou=dev,ou=people,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
 ou: dev
 
-dn: ou=test,ou=staff,ou=people,dc=example,dc=com
+dn: ou=test,ou=people,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
 ou: test
 
-dn: uid=scrum001,ou=dev,ou=staff,ou=people,dc=example,dc=com
+dn: ou=nomemberof,ou=people,dc=example,dc=com
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: nomemberof
+
+dn: ou=testusernumber,ou=people,dc=example,dc=com
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: tetestusernumber
+
+dn: uid=scrum001,ou=dev,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
 objectClass: posixAccount
@@ -51,7 +57,7 @@ uid: scrum001
 homeDirectory: /home/scrum001
 cn: scrum001
 
-dn: uid=scrum002,ou=dev,ou=staff,ou=people,dc=example,dc=com
+dn: uid=scrum002,ou=dev,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 1
 objectClass: inetOrgPerson
@@ -64,8 +70,9 @@ uid: scrum002
 homeDirectory: /home/scrum002
 sn: Scrum team 2
 cn: scrum002
+userPassword:: UEBzc3cwcmQ=
 
-dn: uid=test001,ou=test,ou=staff,ou=people,dc=example,dc=com
+dn: uid=test001,ou=test,ou=people,dc=example,dc=com
 changetype: add
 objectClass: inetOrgPerson
 objectClass: organizationalPerson
@@ -74,6 +81,7 @@ objectClass: top
 uid: test001
 sn: Test team 1
 cn: test001
+userPassword:: UEBzc3cwcmQ=
 
 dn: ou=groups,dc=example,dc=com
 changetype: add
@@ -81,42 +89,73 @@ objectClass: organizationalUnit
 objectClass: top
 ou: groups
 
-dn: ou=pluriel,ou=groups,dc=example,dc=com
+dn: ou=unique,ou=groups,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
-ou: pluriel
+ou: unique
 
-dn: ou=singular,ou=groups,dc=example,dc=com
+dn: ou=internal,ou=groups,dc=example,dc=com
 changetype: add
 objectClass: organizationalUnit
 objectClass: top
-ou: singular
+ou: internal
 
-dn: cn=Group001,ou=pluriel,ou=groups,dc=example,dc=com
+dn: ou=external,ou=groups,dc=example,dc=com
+changetype: add
+objectClass: organizationalUnit
+objectClass: top
+ou: external
+
+dn: cn=manager,ou=internal,ou=groups,dc=example,dc=com
 changetype: add
 objectClass: groupOfNames
 objectClass: top
-member: uid=scrum001,ou=dev,ou=staff,ou=people,dc=example,dc=com
-cn: Group001
+member: uid=test001,ou=test,ou=people,dc=example,dc=com
+cn: Manager
 
-dn: cn=Group001,ou=pluriel,ou=groups,dc=example,dc=com
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: add
+objectClass: groupOfNames
+objectClass: top
+member: uid=test001,ou=test,ou=people,dc=example,dc=com
+cn: staff
+
+dn: cn=partner,ou=internal,ou=groups,dc=example,dc=com
+changetype: add
+objectClass: groupOfNames
+objectClass: top
+member: uid=test001,ou=test,ou=people,dc=example,dc=com
+cn: partner
+
+dn: cn=visitor,ou=external,ou=groups,dc=example,dc=com
+changetype: add
+objectClass: groupOfNames
+objectClass: top
+member: uid=test001,ou=test,ou=people,dc=example,dc=com
+cn: visitor
+
+dn: uid=nmu01,ou=nomemberof,ou=people,dc=example,dc=com
+changetype: add
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+uid: nmu01
+userPassword:: UEBzc3cwcmQ=
+sn: nmu01
+cn: nmu01
+
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
 changetype: modify
 add: member
-member: uid=test001,ou=test,ou=staff,ou=people,dc=example,dc=com
+member: uid=scrum001,ou=dev,ou=people,dc=example,dc=com
 
-dn: ou=devs,ou=pluriel,ou=groups,dc=example,dc=com
-changetype: add
-objectClass: groupOfNames
-objectClass: top
-ou: devs
-member: uid=scrum001,ou=dev,ou=staff,ou=people,dc=example,dc=com
-member: uid=scrum002,ou=dev,ou=staff,ou=people,dc=example,dc=com
-cn: devs
-
-dn: cn=Group010,ou=singular,ou=groups,dc=example,dc=com
+dn: cn=gunique,ou=unique,ou=groups,dc=example,dc=com
 changetype: add
 objectClass: groupOfUniqueNames
 objectClass: top
-uniqueMember: cn=scrum001,ou=dev,ou=staff,ou=people,dc=example,dc=com
-cn: Group010
+uniqueMember: uid=nmu01,ou=nomemberof,ou=people,dc=example,dc=com
+cn: gunique
+
+

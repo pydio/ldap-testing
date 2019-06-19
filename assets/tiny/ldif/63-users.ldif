@@ -1,4 +1,4 @@
-# Dummy users for dc=example,dc=com generated at 2019-06-18, 15:36  
+# Dummy users for dc=example,dc=com generated at 2019-06-19, 13:43  
 
 dn: uid=billy,ou=staff,ou=people,dc=example,dc=com
 changetype: add
@@ -36,6 +36,16 @@ employeeType: staff
 displayName: Judicaël Lefeuvre
 userPassword:: UEBzc3cwcmQ=
 
+dn: cn=manager,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
+
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
+
 dn: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
@@ -53,6 +63,16 @@ mail: jtremollet2@example.com
 employeeType: staff
 displayName: Marie-françoise Tremollet
 userPassword:: UEBzc3cwcmQ=
+
+dn: cn=manager,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
+
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
 
 dn: uid=atimby3,ou=staff,ou=people,dc=example,dc=com
 changetype: add
@@ -72,6 +92,11 @@ employeeType: staff
 displayName: Torbjörn Atimby
 userPassword:: UEBzc3cwcmQ=
 
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=atimby3,ou=staff,ou=people,dc=example,dc=com
+
 dn: uid=lboytond,ou=staff,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
@@ -89,6 +114,11 @@ mail: lboytond@example.com
 employeeType: staff
 displayName: Pål Boytond
 userPassword:: UEBzc3cwcmQ=
+
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=lboytond,ou=staff,ou=people,dc=example,dc=com
 
 dn: uid=mstreather2r,ou=visitor,ou=people,dc=example,dc=com
 changetype: add
@@ -108,7 +138,12 @@ employeeType: visitor
 displayName: Léonie Streather
 userPassword:: UEBzc3cwcmQ=
 
-dn: uid=lroskruge68,ou=controller,ou=people,dc=example,dc=com
+dn: cn=visitor,ou=external,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=mstreather2r,ou=visitor,ou=people,dc=example,dc=com
+
+dn: uid=lroskruge68,ou=partner,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
 objectClass: inetOrgPerson
@@ -122,9 +157,14 @@ homeDirectory: /home/lroskruge68
 sn: Roskrug
 cn: Maïwenn Roskrug
 mail: lroskruge68@example.com
-employeeType: controller
+employeeType: partner
 displayName: Maïwenn Roskrug
 userPassword:: UEBzc3cwcmQ=
+
+dn: cn=partner,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=lroskruge68,ou=partner,ou=people,dc=example,dc=com
 
 dn: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
 changetype: add
@@ -144,6 +184,16 @@ employeeType: staff
 displayName: Maï Coneley
 userPassword:: UEBzc3cwcmQ=
 
+dn: cn=manager,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
+
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
+
 dn: uid=ablondelleme,ou=partner,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
@@ -161,6 +211,11 @@ mail: ablondelleme@example.com
 employeeType: partner
 displayName: Mélinda Ablondelle
 userPassword:: UEBzc3cwcmQ=
+
+dn: cn=partner,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=ablondelleme,ou=partner,ou=people,dc=example,dc=com
 
 dn: uid=sriste8f,ou=staff,ou=people,dc=example,dc=com
 changetype: add
@@ -180,6 +235,11 @@ employeeType: staff
 displayName: Gisèle Riste
 userPassword:: UEBzc3cwcmQ=
 
+dn: cn=staff,ou=internal,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=sriste8f,ou=staff,ou=people,dc=example,dc=com
+
 dn: uid=ppringuerlx,ou=visitor,ou=people,dc=example,dc=com
 changetype: add
 gidNumber: 0
@@ -198,17 +258,22 @@ employeeType: visitor
 displayName: Eléa Pringue
 userPassword:: UEBzc3cwcmQ=
 
-dn: cn=employees,ou=groups,dc=example,dc=com
+dn: cn=visitor,ou=external,ou=groups,dc=example,dc=com
+changetype: modify
+add: member
+member: uid=ppringuerlx,ou=visitor,ou=people,dc=example,dc=com
+
+dn: cn=alluser,ou=groups,dc=example,dc=com
 changetype: add
 objectClass: groupOfNames
 objectClass: top
-cn: employees
+cn: alluser
 member: uid=billy,ou=staff,ou=people,dc=example,dc=com
 member: uid=rlefeuvre1,ou=staff,ou=people,dc=example,dc=com
 member: uid=jtremollet2,ou=staff,ou=people,dc=example,dc=com
 member: uid=atimby3,ou=staff,ou=people,dc=example,dc=com
 member: uid=lboytond,ou=staff,ou=people,dc=example,dc=com
-member: uid=lroskruge68,ou=controller,ou=people,dc=example,dc=com
+member: uid=lroskruge68,ou=partner,ou=people,dc=example,dc=com
 member: uid=yconeleyb2,ou=staff,ou=people,dc=example,dc=com
 member: uid=ablondelleme,ou=partner,ou=people,dc=example,dc=com
 member: uid=sriste8f,ou=staff,ou=people,dc=example,dc=com
